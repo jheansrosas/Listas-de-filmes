@@ -23,16 +23,6 @@ Feito com **HTML5, CSS3 e JavaScript puro (vanilla JS)**, sem backend por enquan
 
 ---
 
-## 💡 Melhorias futuras
-
-- Adicionar **persistência de dados** (localStorage ou backend) para salvar listas do usuário.  
-- Melhorar o **layout e estilo** (responsividade, cores, tipografia).  
-- **Organizar o código JavaScript** em módulos para facilitar manutenção.  
-- Criar **filtros e buscas** para facilitar encontrar filmes.  
-- Incluir **testes automatizados** se o projeto crescer.  
-
----
-
 ## 📄 Licença
 
 Este projeto está sob a licença **MIT** – fique à vontade para usar e modificar.

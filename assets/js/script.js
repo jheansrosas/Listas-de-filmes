@@ -18,10 +18,27 @@ document.addEventListener('DOMContentLoaded', () => {
             poster: inputPoster.value 
         };
 
-        console.log('Novo filme capturado:', novoFilme);
+        renderizarFilme(novoFilme);
 
         //Limpa o formulário após o envio
         filmeForm.reset();
-        alert('Filme capturado com sucesso!');
     });
+
+    const listaFilmes = document.getElementById('lista-filmes');
+
+    //Função para criar o HTML do card
+    function renderizarFilme(filme) {
+        const li = document.createElement('li');
+        li.classList.add('movie-card');
+
+        li.innerHTML = `
+            <img src="${filme.poster}" alt="Poster de ${filme.titulo}">
+            <div class="movie-card-content">
+                <h3>${filme.titulo}</h3>
+                <p>${filme.sinopse}</p>
+            </div>
+        `;
+
+        listaFilmes.appendChild(li);
+    }
 });
